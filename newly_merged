@@ -1,0 +1,35 @@
+while True:
+    course=input("enter the name of course:")
+    st_name=input("enter the name of Students")
+    grade=input("enter the grade of student")
+    a=course[0:1]
+    a1=a.upper()
+    b=st_name[0:1]
+    b1=b.upper()
+    c=grade[0:1]
+    c1=c.upper()
+    a2=ord(a1)
+    b2=ord(b1)
+    c2=ord(c1)
+    
+    
+    hash1='212'
+   
+    val=int(hash1[-2:])
+    hash2=a2+b2+c2-val
+
+    nonce=[1,2,3]
+    for i in  nonce:
+        if (hash2+i)%3==0:
+            pass
+        hash1=str(hash2+i)
+    
+
+    print(hash1)
+
+   # hash1=hash3     
+    
+    #print(hash1)
+
+    #print new things
+    #commit changes
